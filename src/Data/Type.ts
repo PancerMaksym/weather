@@ -16,6 +16,7 @@ export interface UserWeather {
 
 export interface UserLocation{
     id: string;
+    photo: string;
     title: string;
     first: string;
     last: string;
@@ -26,7 +27,7 @@ export interface UserLocation{
 
 export interface FullUser{
     user: UserLocation | MyLocation | null;
-    weather: UserWeather | null;
+    weather: UserWeather | undefined | null;
     isLoading: boolean;
     error: string;
 }

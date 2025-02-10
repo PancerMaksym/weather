@@ -1,0 +1,88 @@
+@use "../_variables" as *;
+
+.userDiv {
+  position: relative;
+  padding: 0.5rem;
+}
+
+/* Блок з фото */
+.point {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+}
+
+.photo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c0c0c0;
+}
+
+/* Ім'я */
+.lName {
+  width: 8rem;
+  height: 1rem;
+  display: block;
+  background-color: #d0d0d0; /* Сірий фон */
+}
+
+/* Іконка погоди */
+.lWeatherIcon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #d0d0d0;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #747474;
+  border-radius: 4px;
+}
+
+/* Нижні блоки */
+.userdiv {
+  display: flex;
+  gap: 5px;
+}
+
+.firstdiv,
+.seconddiv {
+  flex: 1;
+  height: 1.5rem;
+  background-color: #c0c0c0;
+  border-radius: 4px;
+}
+
+.loader {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 5px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
