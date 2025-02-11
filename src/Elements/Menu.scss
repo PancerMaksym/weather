@@ -255,7 +255,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (width <= 650px) {
   .burgerDiv {
     background-color: transparent;
   }

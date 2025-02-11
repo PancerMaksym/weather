@@ -2,7 +2,6 @@ import './App.scss';
 import { Menu } from './Elements/Menu';
 import { Map } from './Elements/Map';
 import { useUsersStore } from './store/users';
-import { Loading } from './Elements/Loading';
 import "leaflet/dist/leaflet.css";
 import { useSavedUsersStore } from './store/savedUsers';
 import { useMapStore } from './store/map';
